@@ -1,0 +1,102 @@
+body{
+    background-color: whitesmoke;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+.card{
+    width: 600px;
+    height: 400px;
+    margin: 15px auto auto auto;
+    background-color: #FFFFFF;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px #bcbcbc;
+    transition: all 0.2s ease;
+}
+
+#oneline{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    line-height: 0;
+    margin: auto;
+}
+
+
+
+#CatImage{
+    width: 240px;
+    height: 160px;
+    margin: auto;
+    background-size: cover;
+    background-image: url("CatStay.jpg");
+}
+.card:hover #CatImage{
+    height: 240px;
+    background-image: url("CatFinger.jpg");
+}
+
+#FirstWord{
+    padding: 24px;
+    width:auto;
+    margin: auto;
+    color: #000;
+    font-size: 70px;
+    font-weight: 600;
+}
+.card:hover p#FirstWord span{
+    display: none;
+}
+.card:hover p#FirstWord{
+    padding-left: 20px;
+}
+.card:hover p#FirstWord::after{
+    content:"IT'S";
+}
+
+
+#SecondWord{
+    padding: 24px;
+    width: auto;
+    margin: auto;
+    line-height: 0;
+    color: #000;
+    font-size: 130px;
+    font-weight: 400px;
+}
+.card:hover p#SecondWord{
+    padding-left: 15px;
+    line-height: 0;
+    font-size: 70px;
+    font-weight: 600;
+}
+.card:hover p#SecondWord span{
+    display: none;
+}
+.card:hover p#SecondWord::after{
+    content: "YOU!";
+}
+
+
+#HoverLetter{
+    padding-bottom: 36px;
+    width: 504px;
+    height: 0px;
+    margin: auto auto 36px auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #B0B0B0;
+    font-size: 36px;
+    font-weight: 400px;
+}
+.card:hover p#HoverLetter{
+    display: none;
+}
